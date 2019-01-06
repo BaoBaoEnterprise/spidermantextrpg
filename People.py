@@ -6,4 +6,3 @@ class Person:
         self.name = name
         self.level = level
         self.stats = stats
-
