@@ -1,5 +1,11 @@
 from Map import CurrentLocation
 
+
+def createbadguy(level, currentlocation):
+    if level == 1:
+        return Person("Rufus Mcgee", level, 2, 2, 2, 3, currentlocation)
+
+
 class Person:
 
     def __init__(self, name, level, strength, agility, charm, hitpoints, currentlocation):

@@ -1,12 +1,14 @@
 from People import Person
+import People
 from Map import CurrentLocation
 
-currentlocation = CurrentLocation(0,0)
+currentlocation = CurrentLocation(0, 0)
+
 
 spiderman = Person(name='Peter Parker', level=1, agility=10, charm=15, strength=12, hitpoints=10, currentlocation=currentlocation)
 
 badguys = []
-badguys.append(Person(name='Rufus Mcgee', level=1, strength=2, agility=1, charm=3, hitpoints=20, currentlocation=currentlocation))
+badguys.append(People.createbadguy())
 
 
 while spiderman.hitpoints > 0:
