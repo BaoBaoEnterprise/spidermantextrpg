@@ -25,6 +25,6 @@ spiderman = Person(name='Peter Parker', level=1, agility=10, charm=15, strength=
 
 badguy1 = BadGuy(10, spiderman.currentlocation)
 
-print("badguy1's name is {0}, he is level {1}, and with strength {2}, agility{3}, charm{4}, hitpoints{5}.").format.(badguy1.name, level, strength, agility, charm, hitpoints)
+print("badguy1's name is {0}, he is level {1}, and with strength {2}, agility{3}, charm{4}, hitpoints{5}.").format(badguy1.name, badguy1.level, badguy1.strength, badguy1.agility, badguy1.charm, badguy1.hitpoints)
 
 
