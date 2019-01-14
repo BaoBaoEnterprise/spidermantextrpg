@@ -1,4 +1,5 @@
 from Map import CurrentLocation
+import random
 
 class Person:
 
@@ -37,5 +38,8 @@ class Person:
             print("Spiderman got killed by " + badguy.name)
 
 class BadGuy:
+
     def __init__(self, level, currentlocation):
-        self = Person("Charles", 2, 2, 2, 2, 2, currentlocation)
+        str = random.randint(1, 5)
+
+        self = Person("Charles", level, str, 2, 2, 2, currentlocation)
