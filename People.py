@@ -41,9 +41,11 @@ class BadGuy(Person):
 
     def __init__(self, level, currentlocation):
         str = random.randint(1*level, 2*level)
+        agility = random.randint(1* level, 2*level)
+        charm = random.randint (1* level, 2*level)
+        hitpoints = random.randint (1* level, 2*level)
 
-        self.strength = str
-
+        '''name = ["Vulture", "Doctor Octopus", "Beetle", "Lizard", "Rhino", "Scorpion", "Black cat"]'''
         Person.__init__(self, "Charles", level, str, 2, 2, 2, currentlocation)
 
 
