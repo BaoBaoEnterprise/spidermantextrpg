@@ -37,9 +37,13 @@ class Person:
         else:
             print("Spiderman got killed by " + badguy.name)
 
-class BadGuy:
+class BadGuy(Person):
 
     def __init__(self, level, currentlocation):
         str = random.randint(1*level, 2*level)
 
-        self = Person("Charles", level, str, 2, 2, 2, currentlocation)
+        self.strength = str
+
+        Person.__init__(self, "Charles", level, str, 2, 2, 2, currentlocation)
+
+
