@@ -1,10 +1,9 @@
 from Map import CurrentLocation
 
-
-def createbadguy(level, currentlocation):
-    if level == 1:
-        return Person("Rufus Mcgee", level, 2, 2, 2, 3, currentlocation)
-
+def badguy(name,level):
+    for name in ["Vulture", "Doctor Octopus", "Beetle", "Lizard", "Rhino", "Scorpion", "Black cat"]:
+        for level in range(1, 20):
+            return badguy(name, level)
 
 class Person:
 
@@ -41,3 +40,5 @@ class Person:
                 print("You punched {0} in the face!.  {0} has {1} hitpoints left!".format(badguy.name, badguy.hitpoints))
         else:
             print("Spiderman got killed by " + badguy.name)
+
+
