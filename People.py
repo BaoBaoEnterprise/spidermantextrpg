@@ -1,10 +1,5 @@
 from Map import CurrentLocation
 
-def badguy(name,level):
-    for name in ["Vulture", "Doctor Octopus", "Beetle", "Lizard", "Rhino", "Scorpion", "Black cat"]:
-        for level in range(1, 20):
-            return badguy(name, level)
-
 class Person:
 
     def __init__(self, name, level, strength, agility, charm, hitpoints, currentlocation):
@@ -41,4 +36,6 @@ class Person:
         else:
             print("Spiderman got killed by " + badguy.name)
 
-
+class BadGuy:
+    def __init__(self, level, currentlocation):
+        self = Person("Charles", 2, 2, 2, 2, 2, currentlocation)
