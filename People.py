@@ -40,6 +40,6 @@ class Person:
 class BadGuy:
 
     def __init__(self, level, currentlocation):
-        str = random.randint(1, 5)
+        str = random.randint(1*level, 2*level)
 
         self = Person("Charles", level, str, 2, 2, 2, currentlocation)
